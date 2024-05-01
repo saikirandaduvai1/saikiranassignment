@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const app = express()
 app.use(express.json())
-const dbPath = path.join(__dirname, 'app.db')
+const dbPath = path.join(__dirname, 'app2.db')
 let database = null
 
 const initilization = async () => {
