@@ -1,0 +1,40 @@
+post http://localhost:3000/tesks/
+Content-Type: application/json
+{
+    "id":4,
+    "title":"javascript",
+    "description":"This is the door Content",
+    "status":"repost",
+    "assignee_id":1,
+    "created_at":"2020-01-01",
+    "updated_at":"2021-02-03"
+}
+###
+get http://localhost:3000/tesks/
+###
+get http://localhost:3000/tasks/1/
+###
+
+put http://localhost:3000/tasks/2/
+Content-Type: application/json
+{
+    "status":"repost",
+    "assignee_id":1,
+    "created_at":"2020-01-01",
+    "updated_at":"2021-02-03"
+}
+###
+
+delete http://localhost:3000/tasks/3/
+###
+
+post http://localhost:3000/login/
+Content-Type: application/json
+{
+    "username": "saiteja",
+    "password": "saiteja.1"
+}
+###
+
+get http://localhost:3000/users/
+Authorization: Bearer "token"
